@@ -1,7 +1,15 @@
 ---
+- name: Add InfluxDB Key on Debian.
+  apt_key:
+    url: "https://repos.influxdata.com/influxdb.key"
+    state: present
+  when: ansible_distribution == "Debian"
+
 - name: Add InfluxDB Repository on Debian.
   apt_repository:
-    repo: "deb https://repos.influxdata.com/{{ ansible_distribution }} {{ ansible_distribution_codename }} stable"
+    repo: "deb https://repos.influxdata.com/{{ ansible_distribution|lower }} {{ ansible_lsb.codename }} stable"
+    state: present
+  when: ansible_distribution == "Debian"
 
 - name: install > Packages
   apt:
