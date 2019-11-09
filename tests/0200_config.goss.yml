@@ -1,7 +1,0 @@
----
-
-file:
-  /etc/influxdb/influxdb.conf:
-    exists: true
-    contains:
-      - reporting-disabled = true
