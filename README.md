@@ -6,14 +6,11 @@ This role will assume the setup of [InfluxDB](https://www.influxdata.com/time-se
 
 It's part of the [Manala Ansible stack](http://www.manala.io) but can be used as a stand alone component.
 
+Thorian93: I modified the role to manage the package source itself, rathe than depending on another role.
+
 ## Requirements
 
-This role is made to work with the __influxdata__ influxDB debian packages. Please use the [**manala.apt**](https://galaxy.ansible.com/manala/apt/) role to handle it properly.
-
-```yaml
-manala_apt_preferences:
- - influxdb@influxdata
-```
+None.
 
 ## Dependencies
 
@@ -22,22 +19,6 @@ None.
 ## Supported InfluxDB versions
 
 0.13.0+
-
-## Installation
-
-### Ansible 2+
-
-Using ansible galaxy cli:
-
-```bash
-ansible-galaxy install manala.influxdb
-```
-
-Using ansible galaxy requirements file:
-
-```yaml
-- src: manala.influxdb
-```
 
 ## Role Handlers
 
@@ -116,4 +97,6 @@ MIT
 
 # Author information
 
-Manala [**(http://www.manala.io/)**](http://www.manala.io)
+Manala [**(http://www.manala.io/)**](http://www.manala.io).
+
+This role was modified in 2019 by [Thorian93](https://thorian93.de/).
