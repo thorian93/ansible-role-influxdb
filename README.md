@@ -99,4 +99,4 @@ MIT
 
 Manala [**(http://www.manala.io/)**](http://www.manala.io).
 
-This role was modified in 2019 by [Thorian93](https://thorian93.de/).
+This role was modified in 2019 by [Thorian93](http://thorian93.de/).
