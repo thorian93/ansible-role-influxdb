@@ -6,7 +6,7 @@ This role will assume the setup of [InfluxDB](https://www.influxdata.com/time-se
 
 It's part of the [Manala Ansible stack](http://www.manala.io) but can be used as a stand alone component.
 
-Thorian93: I modified the role to manage the package source itself, rathe than depending on another role.
+Thorian93: I modified the role to manage the package source itself, rather than depending on another role.
 
 ## Requirements
 
